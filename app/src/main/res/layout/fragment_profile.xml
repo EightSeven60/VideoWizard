@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- All views in this activity MUST have an 'P' at the end
+ to represent the register activity -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ProfileFragment"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tViewProfileP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/YourProfile"
+        android:textSize="50sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/layoutEmailP"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layoutEmailP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/layoutNameP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tViewProfileP"
+        app:layout_constraintWidth_percent="80">
+
+        <TextView
+            android:id="@+id/tViewEmailP"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/Email"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="136dp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tEditEmailP"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/Placeholder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            tools:ignore="DuplicateSpeakableTextCheck"
+            tools:layout_editor_absoluteY="127dp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layoutNameP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/changePasswordButtonP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutEmailP"
+        app:layout_constraintWidth_percent="80">
+
+        <TextView
+            android:id="@+id/tViewNameP"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/Name"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/tEditFirstName"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="207dp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tEditNameP"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/Placeholder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tViewFirstName"
+            tools:layout_editor_absoluteY="207dp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <Button
+        android:id="@+id/changePasswordButtonP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ChangePassword"
+        app:layout_constraintBottom_toTopOf="@+id/layoutPaymentP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutNameP"
+        app:layout_constraintWidth_percent="80" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layoutPaymentP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/applyProfileChangesP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changePasswordButtonP"
+        app:layout_constraintWidth_percent="80">
+
+        <TextView
+            android:id="@+id/tViewPaymentP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/Payment"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/switch1"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="403dp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchPaymentP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tViewPayment"
+            tools:layout_editor_absoluteY="403dp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <Button
+        android:id="@+id/applyProfileChangesP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Apply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutPaymentP"
+        app:layout_constraintWidth_percent="80" />
+
+    <TextView
+        android:id="@+id/applyButtonInstrP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ProfileInstructions"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/applyProfileChangesP"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Video Wizard</string>
+    <string name="title_activity_video_feed">VideoFeedActivity</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+
+    <string name="VideoFeed">Video Feed</string>
+    <string name="Profile">My Profile</string>
+    <string name="Settings">Settings</string>
+    <string name="EditProfile">Edit Profile</string>
+
+    <string name="Email">Email</string>
+    <string name="Username">Username</string>
+    <string name="Name">Name</string>
+    <string name="FirstName">First Name</string>
+    <string name="Surname">Surname</string>
+    <string name="Payment">Payment</string>
+    <string name="YourProfile">Your Profile</string>
+    <string name="ProfileInstructions">Changes will be applied to the user that is currently logged in.</string>
+
+    <string name="Placeholder">Placeholder</string>
+
+    <string name="Apply">Apply</string>
+    <string name="Changes">Changes</string>
+    <string name="ChangePassword">Change Password</string>
+    <string name="Password">Password</string>
+    <string name="ReEnterPassword">Re-enter password</string>
+    <string name="LogIn">Log in</string>
+    <string name="ForgotPassword">Forgot password?</string>
+    <string name="NewUser">New user? Register a new account</string>
+    <string name="ExistingUser">Log in instead</string>
+    <string name="Register">Register</string>
+    <string name="LoginInstructions">Please enter your log in credentials or register a new account.</string>
+    <string name="RegisterInstructions">Please enter the details for your new account. The email must be unique.</string>
+
+    <string name="Folderpath">Folder path where to look for videos</string>
+    <string name="FolderInstructions">Example folder path: /DCIM/Camera</string>
+
+    <string name="YourVideos">Your Videos</string>
+    <string name="Home">Home</string>
+    <string name="Welcome">Welcome Screen and news info section</string>
+</resources>

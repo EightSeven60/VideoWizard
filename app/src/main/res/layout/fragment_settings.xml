@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".ui.SettingsFragment">
+
+    <TextView
+        android:id="@+id/settingsTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="74dp"
+        android:text="@string/Settings"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/pathLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/pathLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        app:layout_constraintBottom_toTopOf="@+id/applySettings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingsTV">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/Folderpath"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="209dp"
+            android:labelFor="@+id/eTextFolderPath"/>
+
+        <EditText
+            android:id="@+id/eTextFolderPath"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:inputType="text"
+            tools:layout_editor_absoluteX="294dp"
+            tools:layout_editor_absoluteY="194dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tViewInstructionsFolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/FolderInstructions"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/pathLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/applySettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Apply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tViewInstructionsFolder" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
